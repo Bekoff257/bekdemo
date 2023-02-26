@@ -5,10 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./icons/icon.css">
 </head>
-<body>
-    <header>
+<body oncontextmenu="return false;">
+        <div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+        </div>
+    <div class="dm_logo_55789">
+        <h1 style="cursor:pointer; color:#fff;">B.Portfolio</h1>
+    </div>
+    <div class="started_demo">
+        <div class="container">
+            <div class="started_content">
+                <div class="str_a">
+                    <div class="str_img">
+                        <img width="130px" height="130px" src="/images/user-picture.png" alt="user_image">
+                    </div>
+                    <div class="str_title">
+                        <h1>Bekpo'latov Bekhzod</h1>
+                        <p>Front-End Developer && Git<br>
+                            Student of <span>
+                                <a href="https://www.instagram.com/astrumuz/" style="text-decoration: none; color: #0088cc">@Astrum</a>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="str_cards">
+                            <div class="str_links">
+                                <div title="Instagram" class="str_ins">
+                                    <div class="image">
+                                        <img src="./icons/Instagram_logo_2016.svg" width="50px" height="50px" alt="insta_">
+                                    </div>
+                                <div class="link">
+                                    <a href="https://www.instagram.com/bekhzod_099one/">Instagram</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="str_links">
+                                <div title="Telegram" class="str_tele">
+                                    <div class="image">
+                                        <img src="/icons/Telegram_logo.svg" width="50px" height="50px" alt="insta_">
+                                    </div>
+                                <div class="link">
+                                    <a href="#">Telegram</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="str_links">
+                                <div title="Twitter" class="str_tw">
+                                    <div class="image">
+                                        <img src="/icons/Twitter-logo.svg" width="50px" height="50px" alt="insta_">
+                                    </div>
+                                <div class="link">
+                                    <a href="#">Twitter</a>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <header>
         <div class="hero">
             <p>BekPost Demo,</p>
             <h1>COOMING SOON</h1>
@@ -35,6 +95,14 @@
             document.getElementById("launch").innerHTML = "EXPIRED";
         }
         }, 1000)
+    </script> -->
+    <script>
+        window.addEventListener("contextmenu", e => e.preventDefault());
+
+        const noRightClick = document.getElementId("myElement");
+
+noRightClick.addEventListener("contextmenu", e => e.preventDefault());
     </script>
+    <script src="/script.js"></script>
 </body>
 </html>

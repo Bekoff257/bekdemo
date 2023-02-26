@@ -1,14 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-header{
+.dm_logo_55789 h1 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgb(101, 0, 94) 3%, rgb(60, 132, 206) 38%, rgb(48, 238, 226) 68%, rgb(255, 25, 25) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.wave {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
+/* header{
 
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/1920x1080-small-memory-4k_1540749683.jpg');
     height: 100vh;
@@ -52,4 +124,126 @@ p{
 #launch{
     font-size: 40px;
     word-spacing: 20px;
+} */
+.container {
+  padding: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
 }
+
+.started_demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.started_demo .started_content {
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid #fff;
+}
+.started_demo .started_content .str_a .str_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.started_demo .started_content .str_a .str_img img {
+  border: 5px solid #FF5733;
+  border-radius: 50%;
+  padding: 6px;
+  width: 150px;
+  height: 150px;
+}
+.started_demo .started_content .str_a .str_cards {
+  padding-top: 15px;
+}
+.started_demo .started_content .str_a .str_cards .str_links {
+  padding-top: 15px;
+  cursor: pointer;
+}
+.started_demo .started_content .str_a .str_cards .str_links .str_ins {
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #d62976;
+}
+.started_demo .started_content .str_a .str_cards .str_links .str_ins .image {
+  padding-right: 10px;
+  border-right: 2px solid white;
+}
+.started_demo .started_content .str_a .str_cards .str_links .str_ins .link a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.7200000286px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s linear;
+}
+.started_demo .started_content .str_a .str_cards .str_links .str_ins .link a:hover {
+  color: #000;
+}
+.started_demo .started_content .str_a .str_cards .str_tele {
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0088cc;
+}
+.started_demo .started_content .str_a .str_cards .str_tele .image {
+  padding-right: 10px;
+  border-right: 2px solid white;
+}
+.started_demo .started_content .str_a .str_cards .str_tele .link a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.7200000286px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s linear;
+}
+.started_demo .started_content .str_a .str_cards .str_tele .link a:hover {
+  color: #000;
+}
+.started_demo .started_content .str_a .str_cards .str_tw {
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #6db8e7;
+}
+.started_demo .started_content .str_a .str_cards .str_tw .image {
+  padding-right: 10px;
+  border-right: 2px solid white;
+}
+.started_demo .started_content .str_a .str_cards .str_tw .link a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.7200000286px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s linear;
+}
+.started_demo .started_content .str_a .str_cards .str_tw .link a:hover {
+  color: #000;
+}
+.started_demo .started_content .str_title h1 {
+  text-align: center;
+  padding-top: 15px;
+  color: #fff;
+}
+.started_demo .started_content .str_title p {
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
